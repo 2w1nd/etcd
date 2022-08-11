@@ -1132,7 +1132,7 @@ func stepLeader(r *raft, m pb.Message) error {
 			nextProbeIdx := m.RejectHint
 			if m.LogTerm > 0 {
 				// If the follower has an uncommitted log tail, we would end up
-				// probing one by one until we hit the common prefix.
+				// probing one by one until we hit the common prefix.f
 				//
 				// For example, if the leader has:
 				//
